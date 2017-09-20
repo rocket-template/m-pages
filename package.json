@@ -1,25 +1,25 @@
 {
-  "name": "rocket-pc-multiple-template",
+  "name": "rocket-mobile-multiple-template",
   "version": "1.0.0",
-  "description": "rocket-space's pc-multiple-template",
+  "description": "rocket-space's mobile-multiple-template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rocket-template/pc-multiple.git"
+    "url": "git+https://github.com/rocket-template/mobile-multiple.git"
   },
   "keywords": [
     "rocket-space",
     "rocket",
-    "pc",
+    "mobile",
     "template"
   ],
   "author": "zeromike",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rocket-template/pc-multiple/issues"
+    "url": "https://github.com/rocket-template/mobile-multiple/issues"
   },
-  "homepage": "https://github.com/rocket-template/pc-multiple#readme"
+  "homepage": "https://github.com/rocket-template/mobile-multiple#readme"
 }

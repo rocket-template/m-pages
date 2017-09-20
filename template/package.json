@@ -12,10 +12,8 @@
     "pre": "./node_modules/.bin/nodemon ./config/bin/dev.js --env=pre",
     "prd": "./node_modules/.bin/nodemon ./config/bin/dev.js --env=production",
     "build": "node ./config/bin/view.js && node ./config/bin/prod.js",
-    {{#flame}}
     "publish": "git subtree pull --prefix=config/webpack/flame https://github.com/zhangzhaoaaa/flame.git release && git subtree push --prefix=config/webpack/flame https://github.com/zhangzhaoaaa/flame.git release",
     "sp": "git subtree pull --prefix=config/webpack/flame https://github.com/zhangzhaoaaa/flame.git release"
-    {{/flame}}
   },
   "engines": {
     "node": ">= 6.0.0",
