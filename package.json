@@ -1,0 +1,25 @@
+{
+  "name": "rocket-pc-multiple-template",
+  "version": "1.0.0",
+  "description": "rocket-space's pc-multiple-template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocket-template/pc-multiple.git"
+  },
+  "keywords": [
+    "rocket-space",
+    "rocket",
+    "pc",
+    "template"
+  ],
+  "author": "zeromike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rocket-template/pc-multiple/issues"
+  },
+  "homepage": "https://github.com/rocket-template/pc-multiple#readme"
+}

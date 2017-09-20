@@ -1,0 +1,28 @@
+/* index */
+@import '../../components/_app';
+@import '../../base/public';
+@import "../../components/scroll-load.scss";
+@import '../../components/pullToRefresher';
+@import '../../components/card.scss';
+
+
+body, html {
+    background-color:#fff;
+    min-height: 100%;
+}
+
+.no-more{
+    margin-top: rem(-30);
+    background: #fff;
+}
+
+.head-bar{
+    .live-link{
+        position: absolute;
+        left: rem(40);
+        top: rem(24);
+        color: #fff;
+        font-size: rem(28);
+    }
+}
+

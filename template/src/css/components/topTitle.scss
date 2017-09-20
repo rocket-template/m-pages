@@ -1,0 +1,44 @@
+// @import "../../base/public.scss";
+.top-title {
+    color: #fff;
+    height: rem(88);
+    line-height: rem(68);
+    padding: rem(10) rem(20);
+    background-color: #262629;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    .left,
+    .right {
+        width: rem(120);
+        height: rem(68);
+        line-height: rem(68);
+        font-size: rem(36);
+        overflow: hidden;
+        text-align: center;
+        a {
+            color: #fff;
+            display: block;
+            padding: 0 rem(20);
+        }
+        a.compile {
+            font-size: rem(35);
+            color: #fff;
+        }
+    }
+    .left a {
+        float: left;
+    }
+    .right a {
+        float: right;
+    }
+    h2 {
+        font-size: rem(34);
+        font-weight: normal;
+        text-align: center;
+        flex: 1;
+    }
+}

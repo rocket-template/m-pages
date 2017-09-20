@@ -1,0 +1,24 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "message": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "message": "Project description",
+      "default": "A PC multiple pages project"
+    },
+    "author": {
+      "type": "string",
+      "message": "Author"
+    },
+    "flame": {
+      "type": "confirm",
+      "message": "Use flame to manage version control?"
+    }
+  },
+  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run lcdev\n\nDocumentation can be found at https://github.com/rocket-template/pc-multiple"
+}

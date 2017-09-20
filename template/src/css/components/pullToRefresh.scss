@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "./_app.scss";
+
+.ptr.transitioning{
+	transition-duration: .4s;
+}
+
+.ptr.layer{
+	height: rem(88px);
+	text-align: center;
+	font-size: rem(24px);
+	line-height: rem(88px);
+	color: #808080;
+	// background-color: #e8edf3;
+	margin-top: rem(-88px);
+	position: relative;
+	z-index: 1;
+}
+
+.ptr.refreshing{
+	transform: translate3d(0, rem(88px), 0);
+}

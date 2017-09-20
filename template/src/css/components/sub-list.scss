@@ -1,0 +1,193 @@
+//订阅列表 两列排列
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.subDetails{
+	padding-left: rem(40);
+	padding-right: rem(40);	
+	.msgList{
+	    padding-bottom:rem(50px);
+	}
+	.msgNav{
+		overflow: hidden;
+		.msgNav-head{
+			height: rem(60);
+			width:rem(60);
+			float:left; 
+			overflow:hidden;
+			border-radius: 50%;
+			margin-right:rem(20);
+			background:url('../../../imgs/public/default-head.jpg') no-repeat;
+			background-size:cover;
+			img{
+				height: rem(60);
+				width:rem(60);
+				border-radius: 50%;
+			}
+		}
+		.msgNav-msg{
+			position: relative;
+			top:rem(-5);
+			width:rem(452);
+			.msgNav-name{
+				font-family: PingFangSC-Regular;
+				font-size: rem(30);
+				color: #333333;
+				letter-spacing: 0;
+				height:rem(42);
+				line-height:rem(42);
+			}
+			.msgNav-intr{
+				font-family: PingFangSC-Regular;
+				font-size: rem(24);
+				color: #999999;
+				letter-spacing: 0;
+				max-height:rem(33);
+				@include ellipsis(1);				
+				line-height:rem(33);
+				padding-top: rem(2);
+			}
+			.msgNav-fans{
+				font-family: Helvetica;
+				font-size: rem(20);
+				padding-top: rem(6);
+				color: #999999;
+				letter-spacing: 0;
+				line-height:rem(28);
+			}
+		}
+
+
+		.subscripBtn{
+			border-radius: 200px;
+			border: 1px solid #ec392a ;
+			color: #FFF ;
+			font-size: rem(24);
+			line-height: 1;
+			background-color:#ec392a;
+			padding : rem(8) 0;
+			width: rem(96);
+			text-align: center;
+			span.show{
+				display:inline-block;
+				em{
+					margin-right:rem(5);
+				}
+			}
+			span.hide{
+				display:none;
+			}
+		}
+		.subscripBtn:active	{
+			border-color: #c52b1e;
+			background: #c52b1e;
+			
+		}
+		.subscripBtn.active{
+			background: #e1e2e5;
+			border: 1px solid #E1E2E5;
+			color: #fff;
+			
+			font-size: rem(24);
+			
+			display:inline-block;
+				
+			span.hide{
+				display:inline-block;
+			}
+			span.show{
+				display:none;
+			}
+		}
+	}
+	
+
+	.msgContent{
+		margin-right:rem(-10);
+		overflow:hidden;
+		margin-top:rem(20);
+		padding-bottom: rem(6);
+		li{	
+			margin-right:rem(10);
+			width: rem(330);
+			.imgShow{
+				position:relative;
+				height:rem(186);
+				width: rem(330);
+				img{
+					height:rem(186);
+					width: rem(330);
+				}
+			}
+			
+			/* .item-flag{
+				padding:rem(3) rem(11);
+				background-color: rgba(0,0,0,.3);
+				color:#FFF;
+				font-size:rem(24);
+				position: absolute;
+				right:rem(10);
+				bottom:rem(10);
+				border-radius:rem(44);
+			} */
+			.item-flag{
+				width:100%;
+				height:rem(40);
+				line-height:rem(40);
+				padding-left: rem(12);
+				background: linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,.5) 100%);
+				color:#FFF;
+				font-size:rem(24);
+				position: absolute;
+				bottom:0;
+				left: 0;
+				box-sizing: border-box;
+			}
+			.live-flag{
+                box-sizing: border-box;
+                width:rem(84);
+                text-align: center;
+                height:rem(34);
+                line-height: 1;
+                padding: rem(7) 0 0;
+                background-color: rgba(0,0,0,.3);
+                color:#FFF;
+                font-size:rem(24);
+                position: absolute;
+                right:rem(10);
+                top:rem(10);
+                border-radius:rem(30);
+                .live{
+                    position: absolute;
+                    left: rem(10);
+                    top: rem(13);
+                    width:rem(10);
+                    height:rem(10);
+                    border-radius:50%;
+                    background: #f00;
+                    font-size: 0;
+                    line-height: 0;
+                    margin-right:rem(6);
+                    display:block;
+                    & ~ span{
+                        padding-left: rem(10);
+                    }
+                }
+            }
+			.wordSpan{
+				padding-top:rem(6);
+				font-family: PingFangSC-Regular;
+				font-size: rem(26);
+				color: #333333;
+				width: rem(330);
+				letter-spacing: 0;
+				@include ellipsis(1);
+				line-height: rem(37);
+			}
+		}
+	}
+}
+

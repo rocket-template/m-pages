@@ -1,0 +1,332 @@
+@import "reset";
+@import "../components/_app.scss";
+body{
+    padding-top: rem(88);
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+.back-top{
+    display: none;
+    position: fixed;
+    right: rem(20);
+    bottom: rem(123);
+    width: rem(80);
+    height: rem(80);
+    line-height: rem(80);
+    text-align: center;
+    font-size: rem(38);
+    color: #fff;
+    background: rgba(41,41,41,0.5);
+    border-radius: rem(40);
+    z-index: 999;
+}
+
+.head-bar{
+    height: rem(88px);
+    width: 100%;
+    line-height: rem(44px);
+    padding: rem(18) rem(40);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    /*border-bottom: 1px solid #e9e9e9;*/
+    text-align: center;
+    background-color: #262629;
+    font-size: rem(36);
+    // overflow: hidden;
+    .fl{
+        margin-left: rem(258);
+    }
+    .icon-logo{
+        display: inline-block;
+        width: rem(151px); 
+        height: rem(45px);
+        background-size: cover;
+        margin-top: rem(1);
+        // vertical-align: rem(-5px);
+    }
+    em{
+        color: #d4d4d4;
+        font-size: rem(32px);
+    }
+    .fr{
+        margin-top: rem(5);
+    }
+}
+
+body{
+    padding-bottom: rem(90);
+}
+.footer{
+    height: rem(98);
+    width: 100%;
+    border-top: 1px solid #e4e4e6;
+    background: #fff;
+    z-index: 200;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    a{
+        position: absolute;
+        top: 0;
+        width: rem(60);
+        text-align: center;
+        line-height: 1;
+        font-size: rem(18);
+        color: #666;
+        padding-top: rem(12);
+        white-space:nowrap;
+        em{
+            font-size: rem(40);
+            color: #676769;
+            &.icon-5{
+                font-size: rem(38);
+            }
+        }
+        p{
+            padding-top: rem(8);
+        }
+        &.link1{
+            left: rem(65);
+        }
+        &.link2{
+            left: 50%;
+            margin-left: rem(-30);
+            p{
+                padding-top: rem(10);
+            }
+        }
+        &.link3{
+            right: rem(65);
+        }
+        &.active{
+            color: #262629;
+            em{
+                color: #262629;
+                &.icon-1:before{
+                    content: "\e901";
+                }
+                &.icon-5:before{
+                    content: "\e905";
+                }
+                &.icon-9:before{
+                    content: "\e909";
+                }
+            }
+        }
+    }
+}
+//没有更多
+.top-line{
+    line-height: rem(28);
+    font-size: rem(24);
+    color: #666;
+    position: relative;
+    padding: rem(20) 0 rem(20);
+    text-align: center;
+    p{
+        display: inline-block;
+        padding: 0 rem(20);
+    }
+    em{
+        margin-right: rem(1);
+        color: #ec392a;
+        font-size: rem(34);
+        vertical-align: rem(-6px);
+    }
+    span{
+        position: relative;
+        top: rem(-6);
+        display: inline-block;
+        width: rem(9);
+        height: rem(9);
+        border-radius: 50%;
+        background: #c5c5c9;
+        &:before{
+            content: "";
+            width: rem(70px);
+            height: 1px;
+            position: absolute;
+            right: 0;
+            top: rem(3);
+            border-top: 1px solid #c5c5c9;
+        }
+        &.line-right{
+            &:before{
+                right: auto;
+                left: 0;
+            }
+        }
+    }
+    &.no-more{
+        padding-bottom: rem(40);
+    }
+}
+
+//icon图标
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../../fonts/icomoon.eot');
+  src:  url('../../../fonts/icomoon.eot') format('embedded-opentype'),
+    url('../../../fonts/icomoon.ttf') format('truetype'),
+    url('../../../fonts/icomoon.woff') format('woff'),
+    url('../../../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-1:before {
+  content: "\e900";
+}
+.icon-2:before {
+  content: "\e901";
+}
+.icon-3:before {
+  content: "\e902";
+}
+.icon-4:before {
+  content: "\e903";
+}
+.icon-5:before {
+  content: "\e904";
+}
+.icon-6:before {
+  content: "\e905";
+}
+.icon-7:before {
+  content: "\e906";
+}
+.icon-8:before {
+  content: "\e907";
+}
+.icon-9:before {
+  content: "\e908";
+}
+.icon-10:before {
+  content: "\e909";
+}
+.icon-11:before {
+  content: "\e90a";
+}
+.icon-12:before {
+  content: "\e90b";
+}
+.icon-13:before {
+  content: "\e90c";
+}
+.icon-14:before {
+  content: "\e91d";
+}
+.icon-15:before {
+  content: "\e90e";
+}
+.icon-16:before {
+  content: "\e90f";
+}
+.icon-17:before {
+  content: "\e910";
+}
+.icon-18:before {
+  content: "\e911";
+}
+.icon-19:before {
+  content: "\e91e";
+}
+.icon-20:before {
+  content: "\e91f";
+}
+.icon-21:before {
+  content: "\e920";
+}
+.icon-22:before {
+  content: "\e915";
+}
+.icon-23:before {
+  content: "\e916";
+}
+.icon-24:before {
+  content: "\e917";
+}
+.icon-25:before {
+  content: "\e91c";
+}
+.icon-26:before {
+  content: "\e919";
+}
+.icon-27:before {
+  content: "\e91a";
+}
+.icon-28:before {
+  content: "\e91b";
+}
+.icon-29:before {
+  content: "\e90d";
+}
+.icon-30:before {
+  content: "\e912";
+}
+.icon-31:before {
+  content: "\e913";
+}
+.icon-32:before {
+  content: "\e914";
+}
+.icon-33:before {
+  content: "\e918";
+}
+.icon-34:before {
+  content: "\e921";
+}
+.icon-35:before {
+  content: "\e922";
+}
+.icon-36:before {
+  content: "\e923";
+}
+.icon-36:before{
+    display: inline-block;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    from {
+        transform:rotate(0);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.icon-37:before {
+  content: "\e924";
+}

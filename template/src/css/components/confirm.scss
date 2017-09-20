@@ -1,0 +1,86 @@
+@import "../components/_app.scss"; // 工具函数
+.m-dialog {
+  width: rem(490);
+  overflow: hidden;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: rem(40);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 10001;
+}
+
+.m-dialog .dialog-tit {
+  font-size: rem(30);
+  padding-top: rem(30);
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.m-dialog .dialog-txt {
+  font-size: rem(30);
+  margin: rem(36) rem(61) rem(41) rem(49);
+}
+
+.m-dialog .dialog-ipt {
+  border: 1px solid #e4e4e6;
+  border-radius: rem(6);
+  font-size: rem(30);
+  padding: 0 rem(10);
+  width: 100%;
+  height: rem(80);
+  display: block;
+  outline: none;
+  text-align: center;
+}
+
+.m-dialog .dialog-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.m-dialog .dialog-btn a {
+  color: #0076FF;
+  font-size: rem(30);
+  line-height: rem(86);
+  text-align: center;
+  display: block;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+}
+
+.m-dialog .dialog-btn a:first-child {
+  color: #DD2323;
+  border-right: 1px solid #e4e4e6;
+}
+
+.m-dialog .dialog-btn a.bor-right {
+  border-right: none;
+}
+
+.m-dialog .dialog-btn:after {
+  height: 0;
+  border-top: 1px solid #e4e4e6;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.dialog-mask {
+  background-color: rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10000;
+}

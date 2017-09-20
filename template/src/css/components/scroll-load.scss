@@ -1,0 +1,17 @@
+/*
+ * 上拉加载更多 样式
+ * 模板：<div class="infinite-scroll"><span>加载中...</span></div>
+ */
+@import './_app.scss';
+
+.infinite-scroll {
+	width: 100%;
+	height: rem(100px);
+	background-color: #fff;
+	text-align: center;
+	span {
+		color: #808080;
+		font-size: rem(24px);
+		line-height: rem(100px);
+	}
+}

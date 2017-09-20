@@ -1,0 +1,208 @@
+/* 我的：card列表 */
+// @import "../../base/public.scss";
+@import "../../components/_app.scss";
+
+.my-card-list{
+	padding:rem(20) 0;
+	.card-title{
+		padding:0 rem(40);
+		height:rem(42);
+		line-height:rem(42);
+		font-size:rem(32);
+		color:#666;
+		margin-top: rem(10);
+	}
+	.list-edit-bar{
+		width:100%;
+		height:rem(90);
+		display:flex;
+		position:fixed;
+		bottom:0;
+		left:0;
+		z-index: 200;
+		background:#FFF;
+		border-top: 1px solid #EEE;
+		transform: translate3d(0,rem(96),0);
+		// display:none;
+		transition:all .2s;
+		&.active{
+			transform: translate3d(0,0,0);
+			// display:flex;
+		}
+		.menu{
+			width:50%;
+			height:rem(90);
+			line-height:rem(90);
+			text-align:center;
+			font-size:rem(32);
+		}
+		.del{
+			border-left:1px solid #eee;
+			color:#EC392A;
+		}
+	}
+	&.edit{
+		.card-title{
+			padding-left:rem(60);
+		}
+		.item{
+			padding:rem(20) rem(10) rem(20) 0;
+			.checkbox{
+				width:rem(60);
+				display:flex;
+				justify-content: center;
+				align-items: center;
+				font-size:rem(36);
+				color:#666;
+			}
+		}
+		.item.active{
+			.checkbox{
+				color:#EC392A;
+			}
+		}
+
+	}
+	.item{
+		display: flex;
+		color:#666;
+		padding:rem(20) rem(40);
+		&:active{
+			background-color: #f7f7f7;
+		}
+		.checkbox{
+			display:none;
+		}
+		.item-img{
+			width:rem(284);
+			height:rem(160);
+			position: relative;
+			img{
+				width:rem(284);
+				height:rem(160);
+			}
+		}
+		.item-flag{
+			box-sizing:border-box;
+			width:100%;
+			height:rem(40);
+			line-height:rem(40);
+            padding-left: rem(12);
+			background: linear-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,.5) 100%);
+			color:#FFF;
+			font-size:rem(24);
+			position: absolute;
+			bottom:0;
+			left:0;
+		}
+		/* .live-flag{
+			height:rem(40);
+			line-height: rem(40);
+			padding:0 rem(20);
+			background-color: rgba(0,0,0,.3);
+			color:#FFF;
+			font-size:rem(24);
+			position: absolute;
+			right:rem(10);
+			top:rem(10);
+			border-radius:rem(44);
+			.live{
+			    position: absolute;
+			    left: rem(20);
+			    top: rem(12);
+				width:rem(16);
+				height:rem(14);
+				border-radius:50%;
+				background: #f00;
+				font-size: 0;
+				line-height: 0;
+			}
+            .live + span{
+                padding-left:rem(24);
+            }
+		} */
+		.live-flag{
+            box-sizing: border-box;
+            width:rem(84);
+            text-align: center;
+            height:rem(34);
+            line-height: 1;
+            padding: rem(7) 0 0;
+            background-color: rgba(0,0,0,.3);
+            color:#FFF;
+            font-size:rem(24);
+            position: absolute;
+            right:rem(10);
+            top:rem(10);
+            border-radius:rem(30);
+            .live{
+                position: absolute;
+                left: rem(10);
+                top: rem(12);
+                width:rem(10);
+                height:rem(10);
+                border-radius:50%;
+                background: #f00;
+                font-size: 0;
+                line-height: 0;
+                margin-right:rem(6);
+                display:block;
+                & ~ span{
+                    padding-left: rem(10);
+                }
+            }
+        }
+		.item-info{
+			padding-left:rem(18);
+			flex:1;
+			overflow: hidden;
+			position:relative;
+			box-sizing:content-box;
+			display:flex;
+			flex-wrap:wrap;
+			align-content:space-between;
+		}
+		h2{
+			display:block;
+			width:100%;
+			height:auto;
+			max-height: rem(80);
+			line-height:rem(40);
+			font-size:rem(28);
+			color:#333;
+			font-weight:normal;
+			@include ellipsis(2);
+		}
+		p{
+			display:block;
+			width:100%;
+			height:rem(30);
+			line-height:rem(30);
+			font-size:rem(24);
+			margin-top:rem(15);
+			color:#999;
+			@include ellipsis(1);
+		}
+		.over{
+			padding-top: rem(8);
+			width:100%;
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+		}
+		.offline{
+			font-size:rem(20);
+			line-height:1;
+			padding:rem(5) rem(20);
+			border-radius:rem(30);
+			background-color: rgba(0,0,0,.1);
+			color:#FFF;
+		}
+		.del{
+			width:rem(50);
+			text-align:right;
+			font-size:rem(30);
+			color:#999;
+		}
+	}
+}

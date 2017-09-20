@@ -1,0 +1,53 @@
+@import "../components/_app.scss"; // 工具函数
+.btn {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #fff;
+    font-size: rem(30px);
+    line-height: 1;
+    border: 1px solid #292929;
+    color: #a6a7a9;
+    padding: rem(12) rem(38px);
+    border-radius: rem(30px);
+    transition: all ease 0.2s;
+    box-sizing: border-box;
+}
+
+.btn.btn-primary {
+    color: #fff;
+    background-color: #292929;
+}
+.btn.btn-primary:active {
+    color: #dedede;
+    background-color: #1a1a1a;
+}
+.btn.disabled{
+    background-color: #808080;
+    color: #fff;
+    border-color: #808080;
+}
+.btn + .btn{
+    margin-left: rem(30px);
+}
+
+.btn.btn-text {
+    background-color: #f0f1f4;
+    color: #333;
+    line-height: 1;
+    font-size: rem(26px);
+    padding: rem(15) rem(30px) rem(15);
+    border-color: #f3f3f3;
+    margin-bottom: rem(7);
+    margin-right: rem(20px);
+}
+
+.btn.btn-text + .btn.btn-text{
+    margin-left: 0;
+}
+
+.btn.btn-text:active {
+    background-color: #e4e4e4;
+    color: #505050;
+    border-color: #e4e4e4;
+}
