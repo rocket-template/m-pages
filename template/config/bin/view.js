@@ -6,7 +6,7 @@ const fsExtra = require('fs-extra')
 const rd = require('rd');
 const ejs = require('ejs');
 const paths = require('../paths');
-
+const buildEnv = require('../buildEnv.json');
 const viewSrcPath = path.join(paths.view, 'ejs');
 const viewDistPath = path.join(paths.view, 'html');
 
@@ -24,7 +24,7 @@ function render(item) {
 	let ejsFrom = /index\.ejs$/.test(item) ? item : path.join(item, 'index.ejs');
 	let key = ejsFrom.replace(path.sep + 'index.ejs', '').match(/.*[\/|\\](.*)/)[1];
 	if (fs.existsSync(ejsFrom)) {
-		ejs.renderFile(ejsFrom, {}, {}, function(err, str) {
+		ejs.renderFile(ejsFrom, buildEnv, {}, function(err, str) {
 			if (err) throw err;
 			let target = path.join(ejsFrom.replace(path.sep + 'index.ejs', ''), '../../../html', key, 'index.html');
 			fsExtra.ensureFileSync(target);
