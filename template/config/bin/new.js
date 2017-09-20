@@ -53,14 +53,14 @@ import 'fastclick.js';
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui" />
 	<meta name="x5-page-mode" content="no-title"/>
-	<link rel="stylesheet" type="text/css" href="/{{name}}/dist/css/${target}.css">
+	<link rel="stylesheet" type="text/css" href="/${buildEnv.project}/dist/css/${target}.css">
 </head>
 <body>
 	<%- include('../../common/rem.ejs')%>
 	<%- include('../../common/head.ejs')%>
 	<%- include('../../common/footer.ejs')%>
-	<script src="/{{name}}/dist/js/vendor.js"></script>
-	<script src="/{{name}}/dist/js/${target}.js"></script>
+	<script src="/${buildEnv.project}/dist/js/vendor.js"></script>
+	<script src="/${buildEnv.project}/dist/js/${target}.js"></script>
 </body>
 </html>`;
 		const jsTarget = path.join(jsPageTargetDir, target, `index.js`);
