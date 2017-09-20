@@ -89,14 +89,7 @@ let webpackConfig = {
 		}),
 		new webpack.ProvidePlugin({
 			$: "zepto"
-		})/*,
-        new NyanProgressPlugin({
-            nyanCatSays (progress, messages) {
-                if (progress === 1) {
-                    return '自己挖得坑，自己要填上啊'
-                }
-            }
-        })*/
+		})
 	]
 };
 

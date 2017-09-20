@@ -16,5 +16,5 @@
       "message": "Author"
     }
   },
-  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run lcdev\n\nDocumentation can be found at https://github.com/rocket-template/mobile-multiple"
+  "completeMessage": "To get started:"
 }
